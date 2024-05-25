@@ -14,7 +14,7 @@ impl Default for LetterState {
     }
 }
 
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, PartialEq, Eq)]
 pub struct GuessedLetter {
     pub value: char,
     pub state: LetterState
